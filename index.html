@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <style>
+
+        body {
+            zoom: 1.6
+        }
+
+        h1 {
+            font-size: xx-large;
+            text-align: center;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: rgb(35, 3, 53);
+            box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+        }
+
+        img {
+            widows: 250px;
+            height:250px;
+            margin-left: 240pt;
+        }
+
+        footer#name {
+            margin-left: 250pt;
+            margin-top: 20px;
+        }
+
+    </style>
+<head>
+    <title>Light On</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/lamp-icon2.ico"/>
+    <script>
+        function acendeLampada() {
+            document.getElementById("luz").src = "img/lampada-acesa.jpg";
+        }
+        function apagaLampada() {
+            document.getElementById("luz").src = "img/lampada-apagada.jpg";
+        }
+        function quebraLampada() {
+            document.getElementById("luz").src = "img/lampada-quebrada.jpg";
+        }
+    </script>
+</head>
+<body>
+    <h1>LIGHT THE LAMP!</h1>
+    <img src="img/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()"/>
+</body>
+<footer id="name">Thiago Peres Schweitzer ❤️</footer>
+</html>
