@@ -33,27 +33,19 @@
     <script>
         var quebrada = false;
         function mudaLampada(tipo) {
-            if (tipo == 1 ) {
-                arquivo = "img/lampada-acesa.jpg";
-            }
 
-            if (tipo == 2 ) {
-                arquivo = "img/lampada-apagada.jpg";
+            if (!quebrada ) {
+                document.getElementById("luz").src = "img/" + tipo + ".jpg";
+                if (tipo == 'lampada-quebrada') {
+                    quebrada = true;
+                }
             }
-
-            if (tipo == 3 ) {
-                arquivo = "img/lampada-quebrada.jpg";
-                quebrada = false;
-            }
-
-            if  (!quebrada )
-            document.getElementById("luz").src = arquivo;
         }
     </script>
 </head>
 <body>
     <h1>LIGHT THE LAMP!</h1>
-    <img src="img/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada(1)" onmouseout="mudaLampada(2)" onclick="mudaLampada(3)"/>
+<img src="img/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/>
 </body>
 <footer id="name">Thiago Peres Schweitzer ❤️</footer>
 </html>     
