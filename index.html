@@ -17,12 +17,17 @@
         img {
             widows: 200px;
             height:200px;
-            margin-left: 250pt;
+            margin-left: 245pt;
+        }
+
+        p#clique {
+            font-size: smaller;
+            text-align: center;
         }
 
         footer#name {
-            margin-left: 250pt;
             margin-top: 20px;
+            text-align: center;
         }
 
     </style>
@@ -44,8 +49,9 @@
     </script>
 </head>
 <body>
-    <h1>LIGHT THE LAMP!</h1>
+    <h1>Passe o mouse e acenda a lâmpada</h1>
 <img src="img/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/>
+<p id="clique">Se clicar ela quebra</p>
 </body>
-<footer id="name">Thiago Peres Schweitzer ❤️</footer>
+<footer id="name">Thiago Peres ❤️ Schweitzer</footer>
 </html>     
