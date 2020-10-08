@@ -7,18 +7,29 @@ body {
 h1 {
     font-size: xx-large;
     text-align: center;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: rgb(35, 3, 53);
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+p {
+    text-align: center;
+}   
+
+p#clique {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
 }
 
 img {
     widows: 200px;
     height:200px;
-    margin-left: 250pt;
+    margin-left: 240pt;
 }
 
+
 footer#name {
-    margin-left: 250pt;
+    text-align: center;
     margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
