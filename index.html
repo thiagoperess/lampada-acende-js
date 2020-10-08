@@ -1,36 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <style>
-
-        body {
-            zoom: 1.6
-        }
-
-        h1 {
-            font-size: xx-large;
-            text-align: center;
-            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            color: rgb(35, 3, 53);
-            box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
-        }
-
-        img {
-            widows: 200px;
-            height:200px;
-            margin-left: 245pt;
-        }
-
-        p#clique {
-            font-size: smaller;
-            text-align: center;
-        }
-
-        footer#name {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-    </style>
+    <link href="css/style.css" rel="stylesheet">
 <head>
     <title>Light On</title>
     <meta charset="UTF-8">  
@@ -41,5 +11,6 @@
 <img src="img/lampada-apagada.jpg" id="luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/>
 <p id="clique">Se clicar ela quebra</p>
 </body>
+<script src="js/script.js"></script>
 <footer id="name">Thiago Peres ❤️ Schweitzer</footer>
 </html>     
